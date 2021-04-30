@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+ <title>Project3</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Project3 page for describing the importance of responsive design and its impact on the target audience.">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript, Responsive Design, Website Analytics, Active users, GEO or Geography, Behavior, Variables, Mixins, Functions, Operators, Nested Variables, Mechanisms to LESS, Client-side, Server-side, LESS or SASS, LESS Implementation, Preprocessing, Preprocessing what is it, Preprocessor, Leaner Style Sheets, Syntactically Awesome Style Sheet">
+  <meta name="author" content="Rich MacFarlane">
+  <meta http-equiv="refresh" content="900">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../project1/cssfiles/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<section>
+ <header>
+  <h1>CMST 386 MacFarlane</h1>
+ </header>
+</section>
+
+<nav class="navbar">
+ <a href="../index.html" class="list-group-item"><i class="fa fa-home"></i> Home</a>
+  <nav id="myLinks">
+   <a href="../project1/gallery.html">Gallery</a>
+   <a href="../project1/project1.html">Project 1</a>
+   <a href="../project2/Project2_Proposal.docx">Project 2</a>
+   <a href="../project3/project3.html">Project 3</a>
+   <a href="#">Project 4</a>
+  </nav>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+   </a>
+</nav>
+
+<article>
+    <h1>THE IMPORTANCE OF RESPONSIVE DESIGN, WEBSITE ANALYTICS AND PREPROCESSING</h1>
+ <section>
+ <h2>What is Responsive Design</h2>
+  <p>Responsive design is a coding process that allows websites to look good on multiple types of platforms; for example: Desktop Computers, Tablets and Mobile Phones. Responsive web design is accomplished with HTML and CSS and is not JavasScript. Responsive web design when implemented in code properly, allow websites to resize according to the viewability of the device such as; the website will shrink, enlarge, hide and/or move content so that it appears to the end-user in a usable format.</p>
+
+ <h2>The Importance of Website Analytics</h2>
+  <p>Google Analytics (GA) allows a website developer to be more dialed into their targeted audience, thus allowing the developer to tailor eCommerce offerings, functionality and/or inner website navigation between pages accordingly and based on multiple factors and reports. The following examples will outline their respective benefits, but these are just a few GA reports to consider.</p>
+
+<article class="flex-container">
+ <article>
+  <h3>Active Users</h3>
+   <p>The GA Active User report helps a developer understand how many visitors navigate to the website, how long they stay and over a given period of time. The Active User report also helps understand the retention rate and will also indicate how often visitors come back.</p>
+ </article>
+
+ <article>
+  <h3>GEO (Geographics)</h3>
+   <p>The GA GEO report provides basic information on the visiting audience's language and geographic location(s). This can be helpful for a developer to tailor and/or offer the website in alternate languages if the report indicates visitors are not coming from primarily English-speaking countries.</p>
+ </article>
+
+ <article>
+  <h3>Behavior</h3>
+   <p>The GA Behavior report is designed to reveal what visitors do on the website. The report specifically indicates what pages people visit and what actions they take while visiting. It is important because knowing how visitors navigate through the website pages and how they interact with the content will allow the developer to tailor and optimize the overall website pages accordingly.</p>
+ </article>
+</article>
+
+ <h2>Preprocessing</h2>
+  <p>Do you know what Proprocessing is and how it benefits website design? Would you like to know and learn more about Preprocessing? Click the button to find out and learn more!<button class="button button1" onclick="document.location='../project3/preprocessing.html'">Learn Preprocessing!</button>
+</p>
+  
+ </section>
+</article>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">To The Top</button>
+
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } 
+    else {
+      x.style.display = "block";
+    }
+    }
+</script>
+
+<ul class="breadcrumb">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../project1/gallery.html">Gallery</a></li>
+    <li><a href="../project1/project1.html">Project 1</a></li>
+    <li><a href="../project2/Project2_Proposal.docx">Project 2</a></li>
+    <li>Project 3</li>
+  </ul>
+
+<footer>
+ <p>&#169; 2021 Copyright. TITUS INDUSTRIES - CMST386 PROJECTS - All Rights Reserved | <a href="mailto:titusindustries@G.com">TITUSINDUSTRIES@G.com</a></p>
+</footer>
+
+</body>
+</html>

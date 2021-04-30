@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+ <title>Preprocessing</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Project3 page for describing the implimentation of LESS or SASS Preproccessing.">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript, Responsive Design, Variables, Mixins, Functions, Operators, Nested Variables, Mechanisms to LESS, Client-side, Server-side, LESS or SASS, LESS Implementation, Preprocessing, Preprocessing what is it, Preprocessor, Leaner Style Sheets, Syntactically Awesome Style Sheet">
+  <meta name="author" content="Rich MacFarlane">
+  <meta http-equiv="refresh" content="900">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../project1/cssfiles/less_sandbox/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+ <header class="header">PREPROCESSING</header>
+
+
+<nav class="navbar">
+ <a href="../index.html" class="list-group-item"><i class="fa fa-home"></i> Home</a>
+  <nav id="myLinks">
+   <a href="../project1/gallery.html">Gallery</a>
+   <a href="../project1/project1.html">Project 1</a>
+   <a href="../project2/project2_Proposal.docx">Project 2</a>
+   <a href="../project3/project3.html">Project 3</a>
+   <a href="#">Project 4</a>
+  </nav>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+   </a>
+</nav>
+<br>
+
+
+<article>
+ <h1 class="h1">PREPROCESSING AND HOW IT WORKS</h1>
+</article>
+
+
+
+<section>
+<article>
+
+<section class="section1">
+ <article>
+  <h2 class="h2">Preprocessing</h2>
+   <p>Preprocessing is CSS backwards-compatible scripting language(s) that extend the default capabilities of CSS. It enables a developer to use logic in CSS style code, such as variables, nesting, operators, mixins, functions, and even mathematical operations. CSS preprocessors make it easy to automate repetitive tasks, reduce the number of errors and code bloat, create reusable code snippets, and ensure backward compatibility.<br>
+   <br>
+   An initial example of a CSS Preprocessor was SASS (Syntactically Awesome Style Sheet) and is the oldest that was initially released in 2006. SASS, written in Ruby allows frontend developers to use variables, if/else statements, for/while/each loops, inheritance, and other computational logic in their CSS code.<br>
+   <br>
+   A newer CSS Preprocessor known as LESS (Leaner Style Sheets) was launched in 2009 and offers many of the features of SASS and is a JavaScript library that extends the default functionalities of CSS and it’s written in JavaScript, so Node.js is needed to install and run the LESS compiler. Holistically, there are two factors of CSS preprocessing: client-side and server-side.</p>
+ </article>
+</section>
+
+<article class="flex-container">
+  <article>
+   <h3>Client-side</h3>
+   <p>Client-side preprocessing, also known as Front-end is what the end-user sees. This type of preprocessing is mainly compiled with HTML, CSS and JavaScript coding. This is the side that end-user experiences on their desktop/laptop PC’s, Tablets and Mobiles phones. Client-side computers (devices) request information from the Server-side computers.</p>
+ </article>
+
+ <article>
+  <h3>Server-side</h3>
+   <p>Server-side preprocessing, and commonly known as back-end is located on the network side such as server computers, this is the side the end-users do not necessarily see and/or engage with directly. This is the CSS Preprocessing side that is often compiled with Python, JavaScript, PHP, SQL and C# coding, just to name some. Server-side computers serve out information to the Client-side computers.</p> 
+ </article>
+</article>
+
+<section class="section2">
+ <article>
+  <h2 class="h2">Mechanisms to LESS</h2>
+   <p>LESS is a dynamic stylesheet language and the indented syntax of LESS is a nested metalanguage that provides a series of mechanisms that allows for real-time compilation via LESS.js and by the browser. The following examples are just some of the LESS mechanisms and will define what they do.</p>
+ </article>
+</section>
+
+<article class="w3-row w3-container">
+<article class="w3-row">
+<article class="w3-col s5 w3-center">
+ <h3>Mixins</h3>
+  <p>Mixins are a group of CSS properties that allow you to use properties of one class for another class and includes class name as its properties. It is a way of mixing in properties from one rule-set into another rule-set in LESS.</p>
+</article>
+
+<article class="w3-col s5 w3-center">
+ <h3>Variables</h3>
+  <p>LESS variables are defined with a @ symbol and the values are assigned in the variable with a colon ( : ). Variables are actually "constants" in that they can only be defined once.</p>
+</article>
+
+<article class="w3-col 5 w3-center">
+ <h3>Nested Variables</h3>
+  <p> Nesting is used to make code follow some visual hierarchy. It makes the code, simple, clean and less complex. However, it is recommended to be careful while nesting because overly nested rules may cause complexity and it proves hard to maintain.</p>
+</article>
+
+<article class="w3-col s2 w3-center">
+ <h3>Operators</h3>
+  <p>Arithmetic operations like addition (+), subtraction ( - ), multiplication ( * ), and/or division ( / ) are supported in LESS. These operations can be done on any number, color and variable as well.</p>
+</article>
+
+<article class="w3-col s2 w3-center">
+ <h3>Functions</h3>
+  <p>Functions, such as round function, floor function, ceil function and percentage function, etc. are supported in LESS to manipulate colors and HTML elements aspects in style sheets. LESS maps JavaScript code with manipulation of values and uses predefined functions.</p>
+ </article>
+
+</article>
+</article>
+
+<section class="section3">
+ <article>
+  <h2 class="h2">Example of LESS Implementation</h2>
+   <p>LESS was implemented on this Preprocessing page by: First reading over the provided materials, watching the video and exploring other online content and videos for more information and instructions. I then went to NodeJs.org and installed the installer (.msi) file to a folder I have dedicated to coding stuff I use. After the NodeJs install, I installed the compiler and created a directory lee_sandbox and configured the LESS and CSS folder watch option so all changes I made in LESS would save to the CSS file every time I updated. I then analyzed my existing css content to see what I could use the Variables mechanism in LESS for. Currently I made use of Variables for holistic recuring codes for background colors, line height, line weights, text padding and alignments and overall border color.<br>Want to see what an LESS and consolidated CSS file looks, click the buttons to learn more!<br><button class="button button1" onclick="document.location='../project1/cssfiles/less_sandbox/less/styles.less'"> LESS File!</button>
+  <button class="button button2" onclick="document.location='../project1/cssfiles/less_sandbox/css/styles.css'">Consolidated CSS File!</button>
+  </p>
+ </article>
+</section>
+
+</article>
+</section>
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">To The Top</button>
+
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+    x.style.display = "none";
+    } 
+    else {
+     x.style.display = "block";
+    }
+    }
+</script>
+
+<ul class="breadcrumb">
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="../project1/gallery.html">Gallery</a></li>
+  <li><a href="../project1/project1.html">Project 1</a></li>
+  <li><a href="../project2/project2_Proposal.docx">Project 2</a></li>
+  <li><a href="../project3/project3.html">Project 3</a></li>
+  <li>Preprocessing</li>
+</ul>
+
+<footer>
+ <p>&#169; 2021 Copyright. TITUS INDUSTRIES - CMST386 PROJECTS - All Rights Reserved | <a href="mailto:titusindustries@G.com">TITUSINDUSTRIES@G.com</a></p>
+</footer>
+
+</body>
+</html>
